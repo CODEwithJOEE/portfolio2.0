@@ -7,6 +7,7 @@
   --line: rgba(255, 255, 255, 0.12);
   --shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
   --radius: 18px;
+  --muted: rgba(255, 255, 255, 0.68);
 }
 
 * {
@@ -323,6 +324,7 @@ img {
 }
 
 .floatingCard {
+  position: absolute; /* ✅ add this */
   top: -14px;
   right: -14px;
 
@@ -689,4 +691,22 @@ img {
   .formRow {
     grid-template-columns: 1fr;
   }
+}
+/* Better focus states (keyboard accessibility) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid rgba(34, 211, 238, 0.7);
+  outline-offset: 3px;
+  border-radius: 12px;
+}
+
+/* Social hover polish */
+.social {
+  transition: 0.2s ease;
+}
+.social:hover {
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-1px);
 }

@@ -41,6 +41,7 @@ setActiveLink();
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // Contact form: opens mail client as fallback
+// Contact form: opens mail client as fallback
 const form = document.getElementById("contactForm");
 const note = document.getElementById("formNote");
 
